@@ -29,14 +29,14 @@ export function Navbar() {
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-line bg-ink/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 lg:px-8">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-line bg-ink/90 backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
         <button
           type="button"
           onClick={() => goTo("inicio")}
-          className="font-display text-lg tracking-wide text-paper"
+          className="font-mono text-[13px] text-gold"
         >
-          DD
+          diazdiegok
         </button>
         <nav className="hidden items-center gap-1 md:flex" aria-label="Principal">
           {nav.map((item) => (
@@ -44,23 +44,21 @@ export function Navbar() {
               key={item.id}
               type="button"
               onClick={() => goTo(item.id)}
-              className={`rounded-full px-3.5 py-1.5 text-[13px] tracking-wide transition ${
-                active === item.id
-                  ? "bg-gold/15 text-gold-soft"
-                  : "text-muted hover:text-paper"
+              className={`rounded-md px-2.5 py-1.5 font-mono text-[12px] transition ${
+                active === item.id ? "bg-gold/15 text-gold-soft" : "text-muted hover:text-paper"
               }`}
             >
-              {item.label}
+              /{item.label}
             </button>
           ))}
         </nav>
         <a
-          href={profile.linkedin}
+          href={profile.github}
           target="_blank"
           rel="noreferrer"
-          className="rounded-full border border-gold/40 px-3.5 py-1.5 text-[12px] uppercase tracking-[0.16em] text-gold-soft hover:bg-gold hover:text-ink"
+          className="rounded-md border border-line px-3 py-1.5 font-mono text-[12px] text-paper hover:border-gold/50"
         >
-          LinkedIn
+          github
         </a>
       </div>
       <nav
@@ -72,13 +70,11 @@ export function Navbar() {
             key={item.id}
             type="button"
             onClick={() => goTo(item.id)}
-            className={`shrink-0 rounded-full px-3 py-1 text-[12px] ${
-              active === item.id
-                ? "bg-gold/20 text-gold-soft"
-                : "text-muted"
+            className={`shrink-0 rounded-md px-2.5 py-1 font-mono text-[12px] ${
+              active === item.id ? "bg-gold/20 text-gold-soft" : "text-muted"
             }`}
           >
-            {item.label}
+            /{item.label}
           </button>
         ))}
       </nav>

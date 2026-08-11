@@ -3,76 +3,82 @@ export const profile = {
   shortName: "Diego Diaz",
   role: "Desarrollador Full Stack",
   location: "Paraná, Entre Ríos, Argentina",
-  availability: "Disponible para nuevos desafíos",
   linkedin: "https://www.linkedin.com/in/diego-nicol%C3%A1s-diaz-966153227/",
   github: "https://github.com/diazdiegok",
   headline:
-    "Desarrollo aplicaciones web y sistemas de bases de datos para empresas. Experiencia en SQL Server, JavaScript y React, aplicada a operación corporativa y comercial.",
+    "Desarrollo aplicaciones web y sistemas de bases de datos para empresas, con foco en SQL Server, JavaScript y React.",
 };
 
 export const about = {
-  heading: "Perfil profesional",
+  heading: "Sobre mí",
   paragraphs: [
-    "Soy Diego Nicolás Diaz, desarrollador full stack radicado en Paraná, Entre Ríos. Combino el desarrollo de aplicaciones web con la administración de bases de datos y el soporte de sistemas en un entorno profesional.",
-    "Desde 2021 integro el área de sistemas de Geller Abogados. Allí brindo asistencia técnica a la operación del estudio y, desde 2024, desarrollo procedimientos y funciones en SQL Server para el procesamiento de datos provenientes de entidades financieras, incluyendo archivos en Excel y texto.",
-    "En paralelo desarrollo proyectos propios: sitios institucionales, catálogos comerciales y tableros de información. Me formé en desarrollo full stack y bases de datos en CoderHouse.",
-  ],
-  facts: [
-    { label: "Ubicación", value: "Paraná, Entre Ríos" },
-    { label: "Especialidad", value: "Web y bases de datos" },
-    { label: "Formación", value: "CoderHouse" },
-    { label: "Idiomas", value: "Español · Inglés técnico" },
+    "Desarrollador full stack en Paraná, Entre Ríos. Trabajo en aplicaciones web, bases de datos y soporte de sistemas en un entorno corporativo.",
+    "En Geller Abogados desarrollo procedimientos en SQL Server para el procesamiento de datos financieros y doy soporte al área de sistemas. Formación en Full Stack y bases de datos (CoderHouse).",
   ],
 };
 
 export const experience = [
   {
-    period: "May 2024 — Actualidad",
+    period: "2024 — Actualidad",
     title: "Desarrollador SQL Server",
     org: "Geller Abogados",
     place: "Paraná, Entre Ríos",
     points: [
-      "Desarrollo de procedimientos y funciones en SQL Server para el procesamiento de datos de entidades financieras.",
-      "Normalización y carga de archivos en distintos formatos (Excel, texto) para el análisis diario de carteras.",
-      "Consultas, reportes y estructuras de datos para la operación del estudio.",
+      "Procedimientos y funciones en SQL Server para el procesamiento de datos de entidades financieras.",
+      "Normalización y carga de archivos Excel y TXT para el análisis diario de carteras.",
+      "Consultas, reportes y modelado de datos para la operación del estudio.",
     ],
   },
   {
-    period: "Mar 2021 — Actualidad",
-    title: "Técnico de asistencia para TI",
+    period: "2021 — Actualidad",
+    title: "Soporte de sistemas",
     org: "Geller Abogados",
     place: "Paraná, Entre Ríos",
     points: [
-      "Soporte técnico del área de sistemas: infraestructura, puestos de trabajo y software del estudio.",
-      "Diagnóstico y resolución de incidentes para garantizar la continuidad operativa.",
-      "Acompañamiento en la digitalización de procesos internos.",
-    ],
-  },
-  {
-    period: "Formación",
-    title: "Desarrollo Full Stack y bases de datos",
-    org: "CoderHouse",
-    place: "Argentina",
-    points: [
-      "HTML, CSS, SASS, Bootstrap, JavaScript y React.",
-      "Bases de datos relacionales: SQL Server y MySQL.",
-      "Proyectos aplicados: catálogos, sitios institucionales y modelado de datos.",
+      "Administración de infraestructura, puestos de trabajo y software.",
+      "Resolución de incidentes y continuidad operativa del área de sistemas.",
     ],
   },
 ];
 
 export const skills = [
   {
-    group: "Desarrollo",
-    items: ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "React", "Next.js", "TypeScript"],
+    group: "Lenguajes",
+    items: [
+      { name: "SQL / T-SQL", level: "Avanzado" },
+      { name: "JavaScript", level: "Intermedio" },
+      { name: "TypeScript", level: "Intermedio" },
+      { name: "HTML / CSS", level: "Avanzado" },
+    ],
   },
   {
-    group: "Bases de datos",
-    items: ["SQL Server", "MySQL", "PostgreSQL", "Modelado relacional"],
+    group: "Frontend",
+    items: [
+      { name: "React", level: "Intermedio" },
+      { name: "Next.js", level: "Intermedio" },
+      { name: "SASS", level: "Intermedio" },
+      { name: "Bootstrap", level: "Avanzado" },
+      { name: "Tailwind CSS", level: "Intermedio" },
+    ],
+  },
+  {
+    group: "Datos",
+    items: [
+      { name: "SQL Server", level: "Avanzado" },
+      { name: "MySQL", level: "Avanzado" },
+      { name: "PostgreSQL", level: "Intermedio" },
+      { name: "Prisma", level: "Intermedio" },
+      { name: "Modelado relacional", level: "Avanzado" },
+    ],
   },
   {
     group: "Herramientas",
-    items: ["Git", "GitHub", "Vercel", "GitHub Pages"],
+    items: [
+      { name: "Git / GitHub", level: "Intermedio" },
+      { name: "Vercel", level: "Intermedio" },
+      { name: "REST APIs", level: "Intermedio" },
+      { name: "Mercado Pago", level: "Básico" },
+    ],
   },
 ];
 
@@ -117,7 +123,7 @@ export const projects: Project[] = [
     slug: "padel-fip",
     title: "FIP Analytics",
     year: "2026",
-    category: "Tablero de rankings",
+    category: "Dashboard",
     stack: ["JavaScript", "FIP Rankings"],
     description:
       "Consulta del ranking oficial de pádel FIP, con filtros por categoría, país y profundidad del listado.",
@@ -129,7 +135,7 @@ export const projects: Project[] = [
     slug: "f1-2026",
     title: "F1 2026",
     year: "2026",
-    category: "Tablero de temporada",
+    category: "Dashboard",
     stack: ["JavaScript"],
     description:
       "Seguimiento de la temporada de Fórmula 1: campeonato, grandes premios, escuderías y pilotos.",
@@ -141,7 +147,7 @@ export const projects: Project[] = [
     slug: "motogp-2026",
     title: "MotoGP 2026",
     year: "2026",
-    category: "Tablero de temporada",
+    category: "Dashboard",
     stack: ["JavaScript"],
     description:
       "Tablero de la temporada de MotoGP, con filtros por gran premio, equipo y piloto.",
@@ -153,7 +159,7 @@ export const projects: Project[] = [
     slug: "big-four",
     title: "Big Four",
     year: "2025",
-    category: "Tablero histórico",
+    category: "Dashboard",
     stack: ["JavaScript"],
     description:
       "Comparativa histórica de Federer, Nadal, Djokovic y Murray por Grand Slam, Masters 1000 y superficie.",
@@ -166,7 +172,7 @@ export const projects: Project[] = [
     title: "DiazDiegok Technology",
     year: "2025",
     category: "E-commerce",
-    stack: ["JavaScript", "WhatsApp"],
+    stack: ["JavaScript"],
     description:
       "Tienda de tecnología en Paraná, con catálogo, servicio técnico y contacto comercial.",
     live: "https://diazdiegok.github.io/diazdiegokservice/",
@@ -180,7 +186,7 @@ export const projects: Project[] = [
     category: "Catálogo",
     stack: ["HTML", "CSS", "JavaScript"],
     description:
-      "Sitio de mates artesanales, termos y bombillas, con identidad de marca y propuesta de envíos a todo el país.",
+      "Sitio de mates artesanales, termos y bombillas, con catálogo y envíos a todo el país.",
     live: "https://diazdiegok.github.io/mates_viajeros/",
     repo: "https://github.com/diazdiegok/mates_viajeros",
     preview: "/projects/mates-viajeros.png",
@@ -192,7 +198,7 @@ export const projects: Project[] = [
     category: "Sitio institucional",
     stack: ["HTML", "CSS"],
     description:
-      "Presentación de servicios de desarrollo web: diseño a medida, hosting, SEO y sitios adaptables a todos los dispositivos.",
+      "Sitio de servicios de desarrollo web: diseño a medida, hosting y sitios adaptables.",
     live: "https://diazdiegok.github.io/desarrollarte/",
     repo: "https://github.com/diazdiegok/desarrollarte",
     preview: "/projects/desarrollarte.png",
@@ -201,19 +207,20 @@ export const projects: Project[] = [
     slug: "geller-mysql",
     title: "Geller Abogados — MySQL",
     year: "2024",
-    category: "Base de datos · Testing",
-    stack: ["MySQL", "SQL", "Modelado"],
+    category: "Base de datos",
+    stack: ["MySQL", "SQL"],
     description:
-      "Base de datos de testing para un estudio jurídico: modelo relacional, tablas, claves y consultas SQL de prueba, desarrollado en CoderHouse.",
+      "Base de datos de testing: modelo relacional, tablas, claves foráneas y consultas SQL de prueba.",
     repo: "https://github.com/diazdiegok/gellerabogados-mysql",
     preview: "/projects/geller-mysql.svg",
   },
 ];
 
 export const nav = [
-  { id: "inicio", label: "Inicio" },
-  { id: "sobre-mi", label: "Sobre mí" },
-  { id: "experiencia", label: "Experiencia" },
-  { id: "proyectos", label: "Proyectos" },
-  { id: "contacto", label: "Contacto" },
+  { id: "inicio", label: "inicio" },
+  { id: "sobre-mi", label: "sobre-mi" },
+  { id: "skills", label: "skills" },
+  { id: "experiencia", label: "experiencia" },
+  { id: "proyectos", label: "proyectos" },
+  { id: "contacto", label: "contacto" },
 ];

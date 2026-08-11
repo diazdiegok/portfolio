@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import { IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { profile } from "@/data/content";
 
-const outfit = Outfit({
+const sans = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  weight: ["400", "500", "600"],
+  variable: "--font-ibm",
   display: "swap",
 });
 
-const cormorant = Cormorant_Garamond({
+const mono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-display",
+  weight: ["400", "500", "600"],
+  variable: "--font-jetbrains",
   display: "swap",
 });
 
@@ -36,9 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${outfit.variable} ${cormorant.variable}`}>
+    <html lang="es" className={`${sans.variable} ${mono.variable}`}>
       <body className="bg-ink text-paper antialiased">
-        <div className="grain" aria-hidden />
         {children}
       </body>
     </html>
