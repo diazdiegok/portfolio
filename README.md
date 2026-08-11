@@ -30,7 +30,7 @@ Abrí [http://localhost:3000](http://localhost:3000).
 1. Creá un repositorio en GitHub (por ejemplo `diazdiegok/portfolio`) y subí este proyecto.
 2. Entrá a [vercel.com](https://vercel.com) → **Add New** → **Project** → importá el repo.
 3. Framework: **Next.js**. Build: `next build`. Output: automático.
-4. Deploy. La URL queda tipo `https://diego-diaz-portfolio.vercel.app`.
+4. Deploy. Sitio en vivo: [https://diegodiaz.vercel.app](https://diegodiaz.vercel.app).
 5. (Opcional) Dominio propio: Settings → Domains.
 
 Si preferís CLI:

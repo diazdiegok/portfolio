@@ -19,7 +19,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: `${profile.name} — ${profile.role}`,
   description: `${profile.headline} ${profile.location}.`,
-  metadataBase: new URL("https://diego-diaz-portfolio.vercel.app"),
+  metadataBase: new URL("https://diegodiaz.vercel.app"),
   openGraph: {
     title: `${profile.name} — ${profile.role}`,
     description: profile.headline,
