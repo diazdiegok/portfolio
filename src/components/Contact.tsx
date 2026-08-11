@@ -9,6 +9,11 @@ export function Contact() {
         <pre className="mt-6 overflow-x-auto rounded-xl border border-line bg-[#010409] p-5 font-mono text-[13px] leading-7 sm:text-[14px]">
           <span className="text-cmt"># Paraná, Entre Ríos</span>
           {"\n"}
+          <span className="text-gold">$</span> echo{" "}
+          <a href={`mailto:${profile.email}`} className="text-str underline-offset-2 hover:underline">
+            {profile.email}
+          </a>
+          {"\n"}
           <span className="text-gold">$</span> open{" "}
           <a href={profile.linkedin} target="_blank" rel="noreferrer" className="text-str underline-offset-2 hover:underline">
             linkedin
@@ -21,10 +26,16 @@ export function Contact() {
         </pre>
         <div className="mt-6 flex flex-wrap gap-3">
           <a
+            href={`mailto:${profile.email}`}
+            className="rounded-md bg-gold px-5 py-2.5 font-mono text-[13px] text-ink hover:bg-gold-soft"
+          >
+            mail
+          </a>
+          <a
             href={profile.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="rounded-md bg-gold px-5 py-2.5 font-mono text-[13px] text-ink hover:bg-gold-soft"
+            className="rounded-md border border-line px-5 py-2.5 font-mono text-[13px] text-paper hover:border-gold/50"
           >
             linkedin
           </a>

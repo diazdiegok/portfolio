@@ -16,7 +16,11 @@ export function Projects() {
                 <img
                   src={p.preview}
                   alt={`Vista previa de ${p.title}`}
-                  className="h-full w-full object-cover object-top"
+                  className={
+                    p.slug === "geller-mysql"
+                      ? "h-full w-full object-contain bg-[#0b1220]"
+                      : "h-full w-full object-cover object-top"
+                  }
                 />
               </div>
               <div className="flex flex-1 flex-col p-5">

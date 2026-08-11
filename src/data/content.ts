@@ -3,29 +3,36 @@ export const profile = {
   shortName: "Diego Diaz",
   role: "Desarrollador Full Stack",
   location: "Paraná, Entre Ríos, Argentina",
+  email: "diazdiegognicok@gmail.com",
   linkedin: "https://www.linkedin.com/in/diego-nicol%C3%A1s-diaz-966153227/",
   github: "https://github.com/diazdiegok",
   headline:
-    "Desarrollo aplicaciones web y sistemas de bases de datos para empresas, con foco en SQL Server, JavaScript y React.",
+    "Desarrollo aplicaciones web, sistemas de bases de datos y herramientas con Python e IA para entornos corporativos.",
 };
 
 export const about = {
   heading: "Sobre mí",
   paragraphs: [
     "Desarrollador full stack en Paraná, Entre Ríos. Trabajo en aplicaciones web, bases de datos y soporte de sistemas en un entorno corporativo.",
-    "En Geller Abogados desarrollo procedimientos en SQL Server para el procesamiento de datos financieros y doy soporte al área de sistemas. Formación en Full Stack y bases de datos (CoderHouse).",
+    "En Geller Abogados desarrollo procedimientos en SQL Server para el procesamiento de datos financieros, aplicativos de optimización integrados con IA y doy soporte al área de sistemas.",
+  ],
+  education: [
+    "Tecnicatura en Programación — UTN",
+    "Full Stack y bases de datos — CoderHouse",
   ],
 };
 
 export const experience = [
   {
     period: "2024 — Actualidad",
-    title: "Desarrollador SQL Server",
+    title: "Desarrollador SQL Server, Python e IA",
     org: "Geller Abogados",
     place: "Paraná, Entre Ríos",
     points: [
       "Procedimientos y funciones en SQL Server para el procesamiento de datos de entidades financieras.",
-      "Normalización y carga de archivos Excel y TXT para el análisis diario de carteras.",
+      "Desarrollo de aplicativos internos de optimización de procesos, integrados con IA.",
+      "Herramientas en Python para automatizar cargas, conciliación y análisis de información operativa.",
+      "Scripts y tableros para reducir tiempos de trabajo sobre archivos Excel y TXT.",
       "Consultas, reportes y modelado de datos para la operación del estudio.",
     ],
   },
@@ -46,6 +53,7 @@ export const skills = [
     group: "Lenguajes",
     items: [
       { name: "SQL / T-SQL", level: "Avanzado" },
+      { name: "Python", level: "Intermedio" },
       { name: "JavaScript", level: "Intermedio" },
       { name: "TypeScript", level: "Intermedio" },
       { name: "HTML / CSS", level: "Avanzado" },
@@ -77,7 +85,7 @@ export const skills = [
       { name: "Git / GitHub", level: "Intermedio" },
       { name: "Vercel", level: "Intermedio" },
       { name: "REST APIs", level: "Intermedio" },
-      { name: "Mercado Pago", level: "Básico" },
+      { name: "IA aplicada", level: "Intermedio" },
     ],
   },
 ];
@@ -212,7 +220,7 @@ export const projects: Project[] = [
     description:
       "Base de datos de testing: modelo relacional, tablas, claves foráneas y consultas SQL de prueba.",
     repo: "https://github.com/diazdiegok/gellerabogados-mysql",
-    preview: "/projects/geller-mysql.svg",
+    preview: "/projects/geller-mysql.png",
   },
 ];
 

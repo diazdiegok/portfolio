@@ -11,6 +11,13 @@ export function About() {
             <p key={p}>{p}</p>
           ))}
         </div>
+        <ul className="mt-6 space-y-1 font-mono text-[13px] text-paper">
+          {about.education.map((item) => (
+            <li key={item}>
+              <span className="text-gold">▸</span> {item}
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

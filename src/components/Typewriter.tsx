@@ -27,12 +27,17 @@ const lines: Seg[][] = [
   ],
   [
     { text: "  stack: ", cls: "text-prop" },
-    { text: '["SQL Server", "JavaScript", "React"]', cls: "text-str" },
+    { text: '["SQL Server", "Python", "JavaScript", "React"]', cls: "text-str" },
     { text: ",", cls: "text-muted" },
   ],
   [
     { text: "  focus: ", cls: "text-prop" },
-    { text: '"web + bases de datos"', cls: "text-str" },
+    { text: '"web + datos + IA"', cls: "text-str" },
+    { text: ",", cls: "text-muted" },
+  ],
+  [
+    { text: "  email: ", cls: "text-prop" },
+    { text: '"diazdiegognicok@gmail.com"', cls: "text-str" },
     { text: ",", cls: "text-muted" },
   ],
   [{ text: "};", cls: "text-paper" }],
