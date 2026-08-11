@@ -6,10 +6,10 @@ export function Contact() {
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <p className="text-[12px] uppercase tracking-[0.28em] text-gold">Hablemos</p>
         <h2 className="font-display mt-4 max-w-3xl text-4xl leading-tight sm:text-6xl">
-          Si tenés un producto, un estudio o una idea, la podemos construir.
+          Si tu equipo necesita un sitio, un sistema o una base de datos, podemos trabajar juntos.
         </h2>
         <p className="mt-6 max-w-xl text-lg text-muted">
-          Trabajo desde Paraná con clientes y proyectos propios. Lo más directo es LinkedIn; el código está en GitHub.
+          Trabajo desde Paraná. Lo más directo es LinkedIn; el código está publicado en GitHub.
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
           <a

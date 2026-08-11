@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" fill="#0c1118"/>
+  <rect x="0" y="0" width="1280" height="72" fill="#111827"/>
+  <text x="48" y="46" fill="#f4efe4" font-family="Arial, sans-serif" font-size="20" font-weight="700">DiazDiegok Technology</text>
+  <text x="1100" y="46" fill="#9a9386" font-family="Arial, sans-serif" font-size="14">Paraná</text>
+  <text x="48" y="160" fill="#f4efe4" font-family="Arial, sans-serif" font-size="40" font-weight="700">Tecnología en Paraná</text>
+  <text x="48" y="210" fill="#9a9386" font-family="Arial, sans-serif" font-size="18">Catálogo · Servicio técnico · Envíos a todo el país</text>
+  <rect x="48" y="280" width="370" height="420" rx="18" fill="#151b24" stroke="#c8a36a" stroke-opacity="0.25"/>
+  <rect x="78" y="310" width="310" height="200" rx="12" fill="#1f2937"/>
+  <text x="233" y="545" text-anchor="middle" fill="#f4efe4" font-family="Arial, sans-serif" font-size="18">iPhone 15 Pro Max</text>
+  <text x="233" y="575" text-anchor="middle" fill="#c8a36a" font-family="Arial, sans-serif" font-size="16">Teléfonos</text>
+  <rect x="455" y="280" width="370" height="420" rx="18" fill="#151b24" stroke="#c8a36a" stroke-opacity="0.25"/>
+  <rect x="485" y="310" width="310" height="200" rx="12" fill="#1f2937"/>
+  <text x="640" y="545" text-anchor="middle" fill="#f4efe4" font-family="Arial, sans-serif" font-size="18">MacBook Air M2</text>
+  <text x="640" y="575" text-anchor="middle" fill="#c8a36a" font-family="Arial, sans-serif" font-size="16">Notebooks</text>
+  <rect x="862" y="280" width="370" height="420" rx="18" fill="#151b24" stroke="#c8a36a" stroke-opacity="0.25"/>
+  <rect x="892" y="310" width="310" height="200" rx="12" fill="#1f2937"/>
+  <text x="1047" y="545" text-anchor="middle" fill="#f4efe4" font-family="Arial, sans-serif" font-size="18">Apple Watch Series 9</text>
+  <text x="1047" y="575" text-anchor="middle" fill="#c8a36a" font-family="Arial, sans-serif" font-size="16">Wearables</text>
+</svg>

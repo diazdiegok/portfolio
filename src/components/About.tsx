@@ -8,7 +8,7 @@ export function About() {
         <div className="mt-6 grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <h2 className="font-display text-4xl leading-tight sm:text-5xl">
-              De Paraná al producto digital.
+              {about.heading}
             </h2>
             <div className="mt-8 space-y-5 text-[17px] leading-relaxed text-muted">
               {about.paragraphs.map((p) => (

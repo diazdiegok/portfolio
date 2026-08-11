@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" fill="#16140f"/>
+  <rect x="80" y="70" width="1120" height="48" rx="8" fill="#1f1c16"/>
+  <circle cx="108" cy="94" r="6" fill="#c8a36a"/>
+  <circle cx="132" cy="94" r="6" fill="#6b6458"/>
+  <circle cx="156" cy="94" r="6" fill="#6b6458"/>
+  <text x="640" y="160" text-anchor="middle" fill="#e4c48a" font-family="Georgia, serif" font-size="22" letter-spacing="8">ETERNITY</text>
+  <text x="640" y="210" text-anchor="middle" fill="#f4efe4" font-family="Georgia, serif" font-size="48">Recuerdos</text>
+  <text x="640" y="250" text-anchor="middle" fill="#9a9386" font-family="Arial, sans-serif" font-size="16">Catálogo · Administración · Checkout</text>
+  <rect x="160" y="320" width="280" height="340" rx="16" fill="#1f1c16" stroke="#c8a36a" stroke-opacity="0.25"/>
+  <rect x="500" y="320" width="280" height="340" rx="16" fill="#1f1c16" stroke="#c8a36a" stroke-opacity="0.25"/>
+  <rect x="840" y="320" width="280" height="340" rx="16" fill="#1f1c16" stroke="#c8a36a" stroke-opacity="0.25"/>
+  <circle cx="300" cy="460" r="54" fill="#c8a36a" fill-opacity="0.18"/>
+  <circle cx="640" cy="460" r="54" fill="#c8a36a" fill-opacity="0.18"/>
+  <circle cx="980" cy="460" r="54" fill="#c8a36a" fill-opacity="0.18"/>
+  <rect x="210" y="560" width="180" height="12" rx="6" fill="#f4efe4" fill-opacity="0.35"/>
+  <rect x="550" y="560" width="180" height="12" rx="6" fill="#f4efe4" fill-opacity="0.35"/>
+  <rect x="890" y="560" width="180" height="12" rx="6" fill="#f4efe4" fill-opacity="0.35"/>
+</svg>

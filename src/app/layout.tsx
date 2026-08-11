@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     description: profile.headline,
     locale: "es_AR",
     type: "website",
-    images: [{ url: "/diego.jpg" }],
+    images: [{ url: "/diego.png" }],
   },
-  icons: { icon: "/diego.jpg" },
+  icons: { icon: "/diego.png" },
 };
 
 export default function RootLayout({

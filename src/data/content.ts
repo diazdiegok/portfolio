@@ -3,25 +3,24 @@ export const profile = {
   shortName: "Diego Diaz",
   role: "Desarrollador Full Stack",
   location: "Paraná, Entre Ríos, Argentina",
-  availability: "Disponible para proyectos",
+  availability: "Disponible para nuevos desafíos",
   linkedin: "https://www.linkedin.com/in/diego-nicol%C3%A1s-diaz-966153227/",
   github: "https://github.com/diazdiegok",
   headline:
-    "Construyo productos digitales, tableros de datos y soluciones de software para negocios reales.",
-  summary:
-    "Soy desarrollador full stack nacido y radicado en Paraná. Combino el trabajo diario en un estudio jurídico —bases de datos, soporte y sistemas— con el diseño y desarrollo de sitios, catálogos y dashboards que la gente realmente usa.",
+    "Especializado en desarrollo web, SQL Server y JavaScript. Diseño y mantengo aplicaciones, sitios y sistemas de información para entornos corporativos y comerciales.",
 };
 
 export const about = {
+  heading: "Perfil profesional",
   paragraphs: [
-    "Me llamo Diego Nicolás Diaz. Vivo en Paraná, Entre Ríos, y me dedico a transformar necesidades de negocio en software claro, rápido y bien presentado.",
-    "Desde 2021 formo parte de Geller Abogados: primero en soporte informático —infraestructura, usuarios y operación diaria— y desde 2024 también como desarrollador SQL Server, diseñando consultas, reportes y estructuras de datos para el estudio.",
-    "En paralelo formé un portafolio propio: e-commerce con checkout real, sitios institucionales, tableros deportivos con datos en vivo y productos de marca. Me interesa el detalle visual tanto como el backend: si no se entiende, no está terminado.",
+    "Soy Diego Nicolás Diaz, desarrollador full stack radicado en Paraná, Entre Ríos. Combino el desarrollo de aplicaciones web con la administración de bases de datos y el soporte de sistemas en un entorno profesional.",
+    "Desde 2021 integro el área de sistemas de Geller Abogados. Allí brindo asistencia técnica a la operación del estudio y, desde 2024, desarrollo procedimientos y funciones en SQL Server para el procesamiento de datos provenientes de entidades financieras, incluyendo archivos en Excel y texto.",
+    "En paralelo desarrollo proyectos propios: sitios institucionales, catálogos comerciales y tableros de información. Me formé en desarrollo full stack y bases de datos en CoderHouse.",
   ],
   facts: [
-    { label: "Base", value: "Paraná, Entre Ríos" },
-    { label: "Enfoque", value: "Full stack · Datos · Producto" },
-    { label: "Formación", value: "CoderHouse · Full Stack / Data" },
+    { label: "Ubicación", value: "Paraná, Entre Ríos" },
+    { label: "Especialidad", value: "Web y bases de datos" },
+    { label: "Formación", value: "CoderHouse" },
     { label: "Idiomas", value: "Español · Inglés técnico" },
   ],
 };
@@ -33,212 +32,180 @@ export const experience = [
     org: "Geller Abogados",
     place: "Paraná, Entre Ríos",
     points: [
-      "Diseño y mantenimiento de bases de datos, consultas y reportes para la operación del estudio.",
-      "Modelado de información jurídica y administrativa con foco en integridad y consulta ágil.",
-      "Puente entre el área legal y la tecnología: traduzco pedidos del día a día en soluciones concretas.",
+      "Desarrollo de procedimientos y funciones en SQL Server para el procesamiento de datos de entidades financieras.",
+      "Normalización y carga de archivos en distintos formatos (Excel, texto) para el análisis diario de carteras.",
+      "Consultas, reportes y estructuras de datos para la operación del estudio.",
     ],
   },
   {
     period: "Mar 2021 — Actualidad",
-    title: "Soporte informático",
+    title: "Técnico de asistencia para TI",
     org: "Geller Abogados",
     place: "Paraná, Entre Ríos",
     points: [
-      "Gestión de infraestructura, puestos de trabajo, redes y software del estudio.",
-      "Atención a usuarios, diagnóstico y resolución de incidentes con continuidad operativa.",
+      "Soporte técnico del área de sistemas: infraestructura, puestos de trabajo y software del estudio.",
+      "Diagnóstico y resolución de incidentes para garantizar la continuidad operativa.",
       "Acompañamiento en la digitalización de procesos internos.",
     ],
   },
   {
     period: "Formación",
-    title: "Desarrollo Full Stack & Data",
+    title: "Desarrollo Full Stack y bases de datos",
     org: "CoderHouse",
     place: "Argentina",
     points: [
       "HTML, CSS, SASS, Bootstrap, JavaScript y React.",
       "Bases de datos relacionales: SQL Server y MySQL.",
-      "Proyectos aplicados a producto: catálogos, landings y modelado de datos.",
+      "Proyectos aplicados: catálogos, sitios institucionales y modelado de datos.",
     ],
   },
 ];
 
 export const skills = [
   {
-    group: "Frontend",
-    items: ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "React", "Next.js", "TypeScript", "Tailwind"],
+    group: "Desarrollo",
+    items: ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "React", "Next.js", "TypeScript"],
   },
   {
-    group: "Datos",
-    items: ["SQL Server", "MySQL", "PostgreSQL", "Modelado relacional", "Reportes"],
+    group: "Bases de datos",
+    items: ["SQL Server", "MySQL", "PostgreSQL", "Modelado relacional"],
   },
   {
-    group: "Producto",
-    items: ["UX / UI", "E-commerce", "Dashboards", "GitHub", "Vercel", "GitHub Pages"],
+    group: "Herramientas",
+    items: ["Git", "GitHub", "Vercel", "GitHub Pages"],
   },
 ];
 
 export type Project = {
   slug: string;
   title: string;
-  client: string;
   year: string;
-  featured: boolean;
   category: string;
   stack: string[];
   description: string;
-  detail: string;
   live?: string;
   repo: string;
+  preview: string;
 };
 
 export const projects: Project[] = [
   {
     slug: "eternity",
     title: "Eternity Recuerdos",
-    client: "Eternity Recuerdos",
     year: "2025",
-    featured: true,
     category: "E-commerce",
     stack: ["Next.js", "PostgreSQL", "Prisma", "Mercado Pago"],
     description:
-      "Catálogo online con panel de administración, carrito persistente, checkout por WhatsApp e integración opcional con Mercado Pago.",
-    detail:
-      "Producto completo para un negocio de recuerdos: el cliente navega sin registrarse, el dueño carga precios e imágenes desde /admin, y el pedido se arma automáticamente hacia WhatsApp. Pensado para producción con base de datos, no como landing estática.",
+      "Catálogo online con panel de administración, carrito y checkout por WhatsApp, con integración opcional a Mercado Pago.",
     repo: "https://github.com/diazdiegok/Eternity",
+    preview: "/projects/eternity.svg",
   },
   {
     slug: "leonel",
     title: "Leonel Daniel Aguirre",
-    client: "El Tolito · Premier Padel",
     year: "2026",
-    featured: true,
     category: "Sitio oficial",
-    stack: ["Next.js", "TypeScript", "Tailwind", "Padel API"],
+    stack: ["Next.js", "TypeScript", "Tailwind"],
     description:
-      "Sitio oficial del jugador de pádel Leonel “El Tolito” Aguirre: biografía, ranking FIP, calendario, sponsors y galería.",
-    detail:
-      "Web de alto rendimiento visual con datos en vivo del circuito FIP / Premier Padel, recorrido de carrera, pareja y marca de paleta. Publicada en GitHub Pages con build estático.",
+      "Sitio oficial del jugador de pádel Premier Padel: biografía, ranking FIP, calendario, sponsors y galería.",
     live: "https://diazdiegok.github.io/Leonel_Daniel_Aguirre/",
     repo: "https://github.com/diazdiegok/Leonel_Daniel_Aguirre",
+    preview: "/projects/leonel.png",
   },
   {
     slug: "padel-fip",
     title: "FIP Analytics",
-    client: "Proyecto propio",
     year: "2026",
-    featured: true,
-    category: "Datos en vivo",
-    stack: ["JavaScript", "FIP Rankings", "UI de filtros"],
+    category: "Tablero de rankings",
+    stack: ["JavaScript", "FIP Rankings"],
     description:
-      "Tablero del ranking oficial de pádel FIP: masculino y femenino, búsqueda, país y profundidad Top 10 a Top 200.",
-    detail:
-      "Consulta la fuente oficial del circuito y presenta el ranking con filtros pensados para analistas y aficionados. Una pieza de producto de datos, no una tabla estática.",
+      "Consulta del ranking oficial de pádel FIP, con filtros por categoría, país y profundidad del listado.",
     live: "https://diazdiegok.github.io/Padel_FIP/",
     repo: "https://github.com/diazdiegok/Padel_FIP",
+    preview: "/projects/padel-fip.png",
   },
   {
     slug: "f1-2026",
     title: "F1 2026",
-    client: "Proyecto propio",
     year: "2026",
-    featured: true,
-    category: "Dashboard",
-    stack: ["JavaScript", "Datos de temporada", "Filtros"],
+    category: "Tablero de temporada",
+    stack: ["JavaScript"],
     description:
-      "Tablero de la temporada de Fórmula 1: campeonato, grandes premios, escuderías y pilotos con actualización en vivo.",
-    detail:
-      "Interfaz de operación para seguir la temporada 2026: recortes por carrera, equipo y piloto, más el estado general del campeonato.",
+      "Seguimiento de la temporada de Fórmula 1: campeonato, grandes premios, escuderías y pilotos.",
     live: "https://diazdiegok.github.io/F1_2026/",
     repo: "https://github.com/diazdiegok/F1_2026",
+    preview: "/projects/f1-2026.png",
   },
   {
     slug: "motogp-2026",
     title: "MotoGP 2026",
-    client: "Proyecto propio",
     year: "2026",
-    featured: false,
-    category: "Dashboard",
-    stack: ["JavaScript", "Datos de temporada", "Filtros"],
+    category: "Tablero de temporada",
+    stack: ["JavaScript"],
     description:
-      "Tablero gemelo para MotoGP: rondas, equipos y pilotos de la temporada en curso, con la misma lógica de campeonato.",
-    detail:
-      "Misma familia de producto que F1 2026, adaptada al paddock: filtros por GP, equipo y piloto, y lectura inmediata de la tabla.",
+      "Tablero de la temporada de MotoGP, con filtros por gran premio, equipo y piloto.",
     live: "https://diazdiegok.github.io/MOTOGP_2026/",
     repo: "https://github.com/diazdiegok/MOTOGP_2026",
+    preview: "/projects/motogp-2026.png",
   },
   {
     slug: "big-four",
     title: "Big Four",
-    client: "Proyecto propio",
     year: "2025",
-    featured: false,
-    category: "Datos históricos",
-    stack: ["JavaScript", "Tenis ATP", "Filtros"],
+    category: "Tablero histórico",
+    stack: ["JavaScript"],
     description:
-      "Tablero histórico de Federer, Nadal, Djokovic y Murray: Grand Slams, Masters 1000, superficies y Copa Davis.",
-    detail:
-      "Una lectura de la era dorada del tenis (2003–2024+) para comparar leyendas por torneo, superficie y jugador, no solo por recuento de títulos.",
+      "Comparativa histórica de Federer, Nadal, Djokovic y Murray por Grand Slam, Masters 1000 y superficie.",
     live: "https://diazdiegok.github.io/Big_Four/",
     repo: "https://github.com/diazdiegok/Big_Four",
+    preview: "/projects/big-four.png",
   },
   {
     slug: "diazdiegokservice",
     title: "DiazDiegok Technology",
-    client: "DiazDiegokService",
     year: "2025",
-    featured: false,
-    category: "E-commerce local",
-    stack: ["JavaScript", "Catálogo", "WhatsApp"],
+    category: "E-commerce",
+    stack: ["JavaScript", "WhatsApp"],
     description:
-      "Tienda de tecnología en Paraná: Apple, Samsung y servicio técnico de celulares y notebooks, con catálogo y contacto directo.",
-    detail:
-      "Marca comercial propia: categorías, productos destacados, diagnóstico gratuito y reparación con garantía. Pensada para conversión local y envíos a todo el país.",
+      "Tienda de tecnología en Paraná, con catálogo, servicio técnico y contacto comercial.",
     live: "https://diazdiegok.github.io/diazdiegokservice/",
     repo: "https://github.com/diazdiegok/diazdiegokservice",
+    preview: "/projects/diazdiegokservice.svg",
   },
   {
     slug: "mates-viajeros",
     title: "Mates Viajeros",
-    client: "Mates Viajeros S.A.",
     year: "2024",
-    featured: false,
-    category: "Marca / Catálogo",
+    category: "Catálogo",
     stack: ["HTML", "CSS", "JavaScript"],
     description:
-      "Sitio de mates artesanales, termos y bombillas: identidad argentina, colección y propuesta de envíos a todo el país.",
-    detail:
-      "Landing de producto con foco en oficio (calabaza, madera, cerámica, alpaca) y una narrativa de viaje: llevar la tradición a cada rincón.",
+      "Sitio de mates artesanales, termos y bombillas, con identidad de marca y propuesta de envíos a todo el país.",
     live: "https://diazdiegok.github.io/mates_viajeros/",
     repo: "https://github.com/diazdiegok/mates_viajeros",
+    preview: "/projects/mates-viajeros.png",
   },
   {
     slug: "desarrollarte",
     title: "Desarrollarte",
-    client: "Desarrollarte",
     year: "2024",
-    featured: false,
-    category: "Agencia",
-    stack: ["HTML", "CSS", "Responsive"],
+    category: "Sitio institucional",
+    stack: ["HTML", "CSS"],
     description:
-      "Sitio de estudio de desarrollo web: diseño a medida, dominio, hosting, SEO y experiencia adaptable a todos los dispositivos.",
-    detail:
-      "Presentación de servicios de maquetación, estructura y asesoramiento comercial. Yo figuro como full stack del equipo: el sitio es la carta de presentación.",
+      "Presentación de servicios de desarrollo web: diseño a medida, hosting, SEO y sitios adaptables a todos los dispositivos.",
     live: "https://diazdiegok.github.io/desarrollarte/",
     repo: "https://github.com/diazdiegok/desarrollarte",
+    preview: "/projects/desarrollarte.png",
   },
   {
     slug: "geller-mysql",
     title: "Geller Abogados — MySQL",
-    client: "Geller Abogados · CoderHouse",
     year: "2024",
-    featured: false,
     category: "Base de datos",
-    stack: ["MySQL", "Modelado", "SQL"],
+    stack: ["MySQL", "SQL"],
     description:
-      "Proyecto de base de datos para un estudio jurídico: modelado relacional aplicado a la operatoria de un bufete real.",
-    detail:
-      "Trabajo académico con anclaje profesional: esquema MySQL pensado para la información de Geller Abogados, en el marco de la formación en datos de CoderHouse.",
+      "Modelado relacional de una base de datos para la operatoria de un estudio jurídico, desarrollado en CoderHouse.",
     repo: "https://github.com/diazdiegok/gellerabogados-mysql",
+    preview: "/projects/geller-mysql.svg",
   },
 ];
 

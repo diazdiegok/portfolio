@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" fill="#10140f"/>
+  <text x="80" y="90" fill="#c8a36a" font-family="Georgia, serif" font-size="28">Geller Abogados</text>
+  <text x="80" y="132" fill="#9a9386" font-family="Arial, sans-serif" font-size="16">Modelo relacional · MySQL · CoderHouse</text>
+  <rect x="80" y="200" width="340" height="220" rx="14" fill="#1a1f18" stroke="#c8a36a" stroke-opacity="0.3"/>
+  <rect x="80" y="200" width="340" height="48" rx="14" fill="#c8a36a" fill-opacity="0.15"/>
+  <text x="100" y="232" fill="#e4c48a" font-family="Consolas, monospace" font-size="16">clientes</text>
+  <text x="100" y="280" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_cliente  PK</text>
+  <text x="100" y="308" fill="#9a9386" font-family="Consolas, monospace" font-size="14">nombre</text>
+  <text x="100" y="336" fill="#9a9386" font-family="Consolas, monospace" font-size="14">email</text>
+  <rect x="470" y="200" width="340" height="260" rx="14" fill="#1a1f18" stroke="#c8a36a" stroke-opacity="0.3"/>
+  <rect x="470" y="200" width="340" height="48" rx="14" fill="#c8a36a" fill-opacity="0.15"/>
+  <text x="490" y="232" fill="#e4c48a" font-family="Consolas, monospace" font-size="16">expedientes</text>
+  <text x="490" y="280" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_expediente  PK</text>
+  <text x="490" y="308" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_cliente  FK</text>
+  <text x="490" y="336" fill="#9a9386" font-family="Consolas, monospace" font-size="14">estado</text>
+  <text x="490" y="364" fill="#9a9386" font-family="Consolas, monospace" font-size="14">fecha_alta</text>
+  <rect x="860" y="200" width="340" height="220" rx="14" fill="#1a1f18" stroke="#c8a36a" stroke-opacity="0.3"/>
+  <rect x="860" y="200" width="340" height="48" rx="14" fill="#c8a36a" fill-opacity="0.15"/>
+  <text x="880" y="232" fill="#e4c48a" font-family="Consolas, monospace" font-size="16">audiencias</text>
+  <text x="880" y="280" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_audiencia  PK</text>
+  <text x="880" y="308" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_expediente  FK</text>
+  <text x="880" y="336" fill="#9a9386" font-family="Consolas, monospace" font-size="14">fecha</text>
+  <path d="M420 310 H470" stroke="#c8a36a" stroke-width="2"/>
+  <path d="M810 310 H860" stroke="#c8a36a" stroke-width="2"/>
+  <rect x="80" y="520" width="1120" height="200" rx="14" fill="#1a1f18" stroke="#c8a36a" stroke-opacity="0.2"/>
+  <text x="110" y="570" fill="#6ee7b7" font-family="Consolas, monospace" font-size="16">SELECT e.nro, c.nombre, a.fecha</text>
+  <text x="110" y="610" fill="#9a9386" font-family="Consolas, monospace" font-size="16">FROM expedientes e</text>
+  <text x="110" y="650" fill="#9a9386" font-family="Consolas, monospace" font-size="16">JOIN clientes c ON c.id_cliente = e.id_cliente;</text>
+</svg>
