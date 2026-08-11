@@ -1,30 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
-  <rect width="1280" height="800" fill="#10140f"/>
-  <text x="80" y="90" fill="#c8a36a" font-family="Georgia, serif" font-size="28">Geller Abogados</text>
-  <text x="80" y="132" fill="#9a9386" font-family="Arial, sans-serif" font-size="16">Modelo relacional · MySQL · CoderHouse</text>
-  <rect x="80" y="200" width="340" height="220" rx="14" fill="#1a1f18" stroke="#c8a36a" stroke-opacity="0.3"/>
-  <rect x="80" y="200" width="340" height="48" rx="14" fill="#c8a36a" fill-opacity="0.15"/>
-  <text x="100" y="232" fill="#e4c48a" font-family="Consolas, monospace" font-size="16">clientes</text>
-  <text x="100" y="280" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_cliente  PK</text>
-  <text x="100" y="308" fill="#9a9386" font-family="Consolas, monospace" font-size="14">nombre</text>
-  <text x="100" y="336" fill="#9a9386" font-family="Consolas, monospace" font-size="14">email</text>
-  <rect x="470" y="200" width="340" height="260" rx="14" fill="#1a1f18" stroke="#c8a36a" stroke-opacity="0.3"/>
-  <rect x="470" y="200" width="340" height="48" rx="14" fill="#c8a36a" fill-opacity="0.15"/>
-  <text x="490" y="232" fill="#e4c48a" font-family="Consolas, monospace" font-size="16">expedientes</text>
-  <text x="490" y="280" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_expediente  PK</text>
-  <text x="490" y="308" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_cliente  FK</text>
-  <text x="490" y="336" fill="#9a9386" font-family="Consolas, monospace" font-size="14">estado</text>
-  <text x="490" y="364" fill="#9a9386" font-family="Consolas, monospace" font-size="14">fecha_alta</text>
-  <rect x="860" y="200" width="340" height="220" rx="14" fill="#1a1f18" stroke="#c8a36a" stroke-opacity="0.3"/>
-  <rect x="860" y="200" width="340" height="48" rx="14" fill="#c8a36a" fill-opacity="0.15"/>
-  <text x="880" y="232" fill="#e4c48a" font-family="Consolas, monospace" font-size="16">audiencias</text>
-  <text x="880" y="280" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_audiencia  PK</text>
-  <text x="880" y="308" fill="#9a9386" font-family="Consolas, monospace" font-size="14">id_expediente  FK</text>
-  <text x="880" y="336" fill="#9a9386" font-family="Consolas, monospace" font-size="14">fecha</text>
-  <path d="M420 310 H470" stroke="#c8a36a" stroke-width="2"/>
-  <path d="M810 310 H860" stroke="#c8a36a" stroke-width="2"/>
-  <rect x="80" y="520" width="1120" height="200" rx="14" fill="#1a1f18" stroke="#c8a36a" stroke-opacity="0.2"/>
-  <text x="110" y="570" fill="#6ee7b7" font-family="Consolas, monospace" font-size="16">SELECT e.nro, c.nombre, a.fecha</text>
-  <text x="110" y="610" fill="#9a9386" font-family="Consolas, monospace" font-size="16">FROM expedientes e</text>
-  <text x="110" y="650" fill="#9a9386" font-family="Consolas, monospace" font-size="16">JOIN clientes c ON c.id_cliente = e.id_cliente;</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" fill="none">
+  <rect width="1440" height="900" fill="#0b1220"/>
+  <rect width="1440" height="72" fill="#132033"/>
+  <circle cx="36" cy="36" r="8" fill="#f59e0b"/>
+  <text x="56" y="42" fill="#93c5fd" font-family="Consolas, ui-monospace, monospace" font-size="16">MySQL 8.0</text>
+  <text x="220" y="42" fill="#64748b" font-family="Consolas, ui-monospace, monospace" font-size="14">localhost:3306</text>
+  <text x="1080" y="42" fill="#34d399" font-family="Consolas, ui-monospace, monospace" font-size="14">? connected  ·  env: testing</text>
+
+  <text x="40" y="120" fill="#e2e8f0" font-family="Georgia, serif" font-size="32">geller_abogados_test</text>
+  <text x="40" y="154" fill="#94a3b8" font-family="Arial, sans-serif" font-size="16">Esquema relacional de prueba · estudio jurídico</text>
+
+  <rect x="40" y="190" width="300" height="250" rx="12" fill="#0f1b2d" stroke="#38bdf8" stroke-opacity="0.45"/>
+  <rect x="40" y="190" width="300" height="44" rx="12" fill="#0ea5e9"/>
+  <text x="56" y="218" fill="#0b1220" font-family="Consolas, monospace" font-size="16" font-weight="700">clientes</text>
+  <text x="56" y="256" fill="#7dd3fc" font-family="Consolas, monospace" font-size="13">PK  id_cliente     INT</text>
+  <text x="56" y="284" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    nombre         VARCHAR</text>
+  <text x="56" y="312" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    dni            VARCHAR</text>
+  <text x="56" y="340" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    email          VARCHAR</text>
+  <text x="56" y="368" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    telefono       VARCHAR</text>
+  <text x="56" y="410" fill="#64748b" font-family="Consolas, monospace" font-size="12">12 filas de prueba</text>
+
+  <rect x="380" y="190" width="320" height="290" rx="12" fill="#0f1b2d" stroke="#38bdf8" stroke-opacity="0.45"/>
+  <rect x="380" y="190" width="320" height="44" rx="12" fill="#0ea5e9"/>
+  <text x="396" y="218" fill="#0b1220" font-family="Consolas, monospace" font-size="16" font-weight="700">expedientes</text>
+  <text x="396" y="256" fill="#7dd3fc" font-family="Consolas, monospace" font-size="13">PK  id_expediente  INT</text>
+  <text x="396" y="284" fill="#fbbf24" font-family="Consolas, monospace" font-size="13">FK  id_cliente     INT</text>
+  <text x="396" y="312" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    nro_exp        VARCHAR</text>
+  <text x="396" y="340" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    fuero          VARCHAR</text>
+  <text x="396" y="368" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    estado         ENUM</text>
+  <text x="396" y="396" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    fecha_alta     DATE</text>
+  <text x="396" y="450" fill="#64748b" font-family="Consolas, monospace" font-size="12">18 filas de prueba</text>
+
+  <rect x="740" y="190" width="320" height="250" rx="12" fill="#0f1b2d" stroke="#38bdf8" stroke-opacity="0.45"/>
+  <rect x="740" y="190" width="320" height="44" rx="12" fill="#0ea5e9"/>
+  <text x="756" y="218" fill="#0b1220" font-family="Consolas, monospace" font-size="16" font-weight="700">audiencias</text>
+  <text x="756" y="256" fill="#7dd3fc" font-family="Consolas, monospace" font-size="13">PK  id_audiencia   INT</text>
+  <text x="756" y="284" fill="#fbbf24" font-family="Consolas, monospace" font-size="13">FK  id_expediente  INT</text>
+  <text x="756" y="312" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    fecha          DATETIME</text>
+  <text x="756" y="340" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    juzgado        VARCHAR</text>
+  <text x="756" y="368" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    resultado      VARCHAR</text>
+  <text x="756" y="410" fill="#64748b" font-family="Consolas, monospace" font-size="12">9 filas de prueba</text>
+
+  <rect x="1100" y="190" width="300" height="250" rx="12" fill="#0f1b2d" stroke="#38bdf8" stroke-opacity="0.45"/>
+  <rect x="1100" y="190" width="300" height="44" rx="12" fill="#0ea5e9"/>
+  <text x="1116" y="218" fill="#0b1220" font-family="Consolas, monospace" font-size="16" font-weight="700">pagos</text>
+  <text x="1116" y="256" fill="#7dd3fc" font-family="Consolas, monospace" font-size="13">PK  id_pago        INT</text>
+  <text x="1116" y="284" fill="#fbbf24" font-family="Consolas, monospace" font-size="13">FK  id_expediente  INT</text>
+  <text x="1116" y="312" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    monto          DECIMAL</text>
+  <text x="1116" y="340" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    medio          VARCHAR</text>
+  <text x="1116" y="368" fill="#cbd5e1" font-family="Consolas, monospace" font-size="13">    fecha          DATE</text>
+  <text x="1116" y="410" fill="#64748b" font-family="Consolas, monospace" font-size="12">15 filas de prueba</text>
+
+  <path d="M340 300 H380" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M700 300 H740" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M1060 300 H1100" stroke="#38bdf8" stroke-width="2"/>
+
+  <rect x="40" y="520" width="1360" height="340" rx="14" fill="#071018" stroke="#1e293b"/>
+  <text x="60" y="560" fill="#22c55e" font-family="Consolas, monospace" font-size="15">mysql&gt; USE geller_abogados_test;</text>
+  <text x="60" y="592" fill="#94a3b8" font-family="Consolas, monospace" font-size="15">Database changed</text>
+  <text x="60" y="632" fill="#22c55e" font-family="Consolas, monospace" font-size="15">mysql&gt; SELECT e.nro_exp, c.nombre, e.estado</text>
+  <text x="60" y="664" fill="#22c55e" font-family="Consolas, monospace" font-size="15">    -&gt; FROM expedientes e</text>
+  <text x="60" y="696" fill="#22c55e" font-family="Consolas, monospace" font-size="15">    -&gt; JOIN clientes c ON c.id_cliente = e.id_cliente</text>
+  <text x="60" y="728" fill="#22c55e" font-family="Consolas, monospace" font-size="15">    -&gt; WHERE e.estado = 'en_tramite';</text>
+  <text x="60" y="768" fill="#e2e8f0" font-family="Consolas, monospace" font-size="14">+------------+-------------------+------------+</text>
+  <text x="60" y="792" fill="#e2e8f0" font-family="Consolas, monospace" font-size="14">| EXP-2024-18 | Pérez, Mariana    | en_tramite |</text>
+  <text x="60" y="816" fill="#e2e8f0" font-family="Consolas, monospace" font-size="14">| EXP-2024-21 | Gómez, Martín     | en_tramite |</text>
+  <text x="60" y="840" fill="#64748b" font-family="Consolas, monospace" font-size="13">2 rows in set (0.01 sec)  ·  dataset de testing</text>
 </svg>

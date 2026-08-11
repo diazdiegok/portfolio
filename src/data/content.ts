@@ -7,7 +7,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/diego-nicol%C3%A1s-diaz-966153227/",
   github: "https://github.com/diazdiegok",
   headline:
-    "Especializado en desarrollo web, SQL Server y JavaScript. Diseño y mantengo aplicaciones, sitios y sistemas de información para entornos corporativos y comerciales.",
+    "Desarrollo aplicaciones web y sistemas de bases de datos para empresas. Experiencia en SQL Server, JavaScript y React, aplicada a operación corporativa y comercial.",
 };
 
 export const about = {
@@ -97,8 +97,9 @@ export const projects: Project[] = [
     stack: ["Next.js", "PostgreSQL", "Prisma", "Mercado Pago"],
     description:
       "Catálogo online con panel de administración, carrito y checkout por WhatsApp, con integración opcional a Mercado Pago.",
+    live: "https://eternity-i5n2.onrender.com/",
     repo: "https://github.com/diazdiegok/Eternity",
-    preview: "/projects/eternity.svg",
+    preview: "/projects/eternity.png",
   },
   {
     slug: "leonel",
@@ -170,7 +171,7 @@ export const projects: Project[] = [
       "Tienda de tecnología en Paraná, con catálogo, servicio técnico y contacto comercial.",
     live: "https://diazdiegok.github.io/diazdiegokservice/",
     repo: "https://github.com/diazdiegok/diazdiegokservice",
-    preview: "/projects/diazdiegokservice.svg",
+    preview: "/projects/diazdiegokservice.png",
   },
   {
     slug: "mates-viajeros",
@@ -200,10 +201,10 @@ export const projects: Project[] = [
     slug: "geller-mysql",
     title: "Geller Abogados — MySQL",
     year: "2024",
-    category: "Base de datos",
-    stack: ["MySQL", "SQL"],
+    category: "Base de datos · Testing",
+    stack: ["MySQL", "SQL", "Modelado"],
     description:
-      "Modelado relacional de una base de datos para la operatoria de un estudio jurídico, desarrollado en CoderHouse.",
+      "Base de datos de testing para un estudio jurídico: modelo relacional, tablas, claves y consultas SQL de prueba, desarrollado en CoderHouse.",
     repo: "https://github.com/diazdiegok/gellerabogados-mysql",
     preview: "/projects/geller-mysql.svg",
   },
