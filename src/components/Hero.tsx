@@ -7,6 +7,8 @@ import { Typewriter } from "@/components/Typewriter";
 
 export function Hero() {
   const [ready, setReady] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const p = Math.min(1, Math.max(0, progress));
 
   return (
     <section id="inicio" className="section-pad grid-bg relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
@@ -21,7 +23,7 @@ export function Hero() {
               <span className="ml-3 font-mono text-[11px] text-cmt">profile.ts</span>
             </div>
             <h1 className="sr-only">{profile.name}</h1>
-            <Typewriter onDone={() => setReady(true)} />
+            <Typewriter onProgress={setProgress} onDone={() => setReady(true)} />
           </div>
           <div
             className={`mt-6 flex flex-wrap gap-3 transition-opacity duration-500 ${
@@ -65,15 +67,28 @@ export function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
               <span className="ml-2 font-mono text-[11px] text-cmt">diego.png</span>
+              <span className="ml-auto font-mono text-[11px] text-gold">
+                {Math.round(p * 100)}%
+              </span>
             </div>
-            <Image
-              src="/diego.png"
-              alt={profile.name}
-              width={720}
-              height={720}
-              priority
-              className="aspect-square w-full object-cover object-[center_18%]"
-            />
+            <div className="relative aspect-square overflow-hidden bg-[#010409]">
+              <Image
+                src="/diego.png"
+                alt={profile.name}
+                width={720}
+                height={720}
+                priority
+                className="h-full w-full object-cover object-[center_18%] transition-[filter,opacity] duration-150"
+                style={{
+                  opacity: 0.12 + p * 0.88,
+                  filter: `grayscale(${(1 - p) * 80}%) blur(${(1 - p) * 10}px)`,
+                  clipPath: `inset(0 0 ${(1 - p) * 100}% 0)`,
+                }}
+              />
+              {p < 1 ? (
+                <div className="photo-scan" style={{ top: `${p * 100}%` }} />
+              ) : null}
+            </div>
           </div>
         </div>
       </div>

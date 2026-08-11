@@ -82,3 +82,13 @@ body {
     linear-gradient(90deg, rgba(63, 185, 80, 0.04) 1px, transparent 1px);
   background-size: 28px 28px;
 }
+
+.photo-scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #3fb950, transparent);
+  box-shadow: 0 0 16px #3fb950;
+  pointer-events: none;
+}

@@ -13,8 +13,10 @@ export const profile = {
 export const about = {
   heading: "Sobre mí",
   paragraphs: [
-    "Desarrollador full stack en Paraná, Entre Ríos. Trabajo en aplicaciones web, bases de datos y soporte de sistemas en un entorno corporativo.",
-    "En Geller Abogados desarrollo procedimientos en SQL Server para el procesamiento de datos financieros, aplicativos de optimización integrados con IA y doy soporte al área de sistemas.",
+    "Soy Diego Nicolás Diaz, desarrollador full stack de Paraná, Entre Ríos. Diseño y construyo software que resuelve problemas reales: sitios, sistemas, bases de datos y herramientas internas que el equipo usa todos los días.",
+    "En Geller Abogados trabajo el área de sistemas de punta a punta. Desarrollo procedimientos en SQL Server para el procesamiento de datos financieros, aplicativos de optimización integrados con IA y automatizaciones en Python. También doy soporte técnico para que la operación no se detenga.",
+    "En paralelo desarrollo productos propios: e-commerce con checkout real, sitios oficiales y tableros de información en vivo. Me interesa que se vea bien, que sea claro y que funcione. Si no aporta, no está terminado.",
+    "Formación en Tecnicatura en Programación (UTN) y Full Stack / bases de datos (CoderHouse). Combino el criterio de un perfil de sistemas con la capacidad de salir a producir interfaces, APIs y soluciones de datos.",
   ],
   education: [
     "Tecnicatura en Programación — UTN",
@@ -56,7 +58,8 @@ export const skills = [
       { name: "Python", level: "Intermedio" },
       { name: "JavaScript", level: "Intermedio" },
       { name: "TypeScript", level: "Intermedio" },
-      { name: "HTML / CSS", level: "Avanzado" },
+      { name: "HTML5", level: "Avanzado" },
+      { name: "CSS3", level: "Avanzado" },
     ],
   },
   {
@@ -67,6 +70,7 @@ export const skills = [
       { name: "SASS", level: "Intermedio" },
       { name: "Bootstrap", level: "Avanzado" },
       { name: "Tailwind CSS", level: "Intermedio" },
+      { name: "Responsive UI", level: "Avanzado" },
     ],
   },
   {
@@ -77,6 +81,16 @@ export const skills = [
       { name: "PostgreSQL", level: "Intermedio" },
       { name: "Prisma", level: "Intermedio" },
       { name: "Modelado relacional", level: "Avanzado" },
+      { name: "ETL / Excel / TXT", level: "Avanzado" },
+    ],
+  },
+  {
+    group: "IA y automatización",
+    items: [
+      { name: "Python", level: "Intermedio" },
+      { name: "IA aplicada", level: "Intermedio" },
+      { name: "Automatización de procesos", level: "Intermedio" },
+      { name: "Scripts de optimización", level: "Intermedio" },
     ],
   },
   {
@@ -84,8 +98,10 @@ export const skills = [
     items: [
       { name: "Git / GitHub", level: "Intermedio" },
       { name: "Vercel", level: "Intermedio" },
+      { name: "GitHub Pages", level: "Intermedio" },
       { name: "REST APIs", level: "Intermedio" },
-      { name: "IA aplicada", level: "Intermedio" },
+      { name: "Render", level: "Básico" },
+      { name: "Windows / redes", level: "Intermedio" },
     ],
   },
 ];

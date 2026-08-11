@@ -53,10 +53,12 @@ export function Navbar() {
           ))}
         </nav>
         <a
-          href={`mailto:${profile.email}`}
+          href={profile.github}
+          target="_blank"
+          rel="noreferrer"
           className="rounded-md border border-line px-3 py-1.5 font-mono text-[12px] text-paper hover:border-gold/50"
         >
-          mail
+          github
         </a>
       </div>
       <nav

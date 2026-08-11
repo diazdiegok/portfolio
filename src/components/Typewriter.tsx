@@ -32,7 +32,7 @@ const lines: Seg[][] = [
   ],
   [
     { text: "  focus: ", cls: "text-prop" },
-    { text: '"web + datos + IA"', cls: "text-str" },
+    { text: '"WEB + DATOS + IA"', cls: "text-str" },
     { text: ",", cls: "text-muted" },
   ],
   [
@@ -43,7 +43,13 @@ const lines: Seg[][] = [
   [{ text: "};", cls: "text-paper" }],
 ];
 
-export function Typewriter({ onDone }: { onDone?: () => void }) {
+export function Typewriter({
+  onDone,
+  onProgress,
+}: {
+  onDone?: () => void;
+  onProgress?: (ratio: number) => void;
+}) {
   const chars = useMemo(
     () =>
       lines.flatMap((line, i) => [
@@ -58,7 +64,13 @@ export function Typewriter({ onDone }: { onDone?: () => void }) {
   const [count, setCount] = useState(0);
   const done = count >= chars.length;
   const onDoneRef = useRef(onDone);
+  const onProgressRef = useRef(onProgress);
   onDoneRef.current = onDone;
+  onProgressRef.current = onProgress;
+
+  useEffect(() => {
+    onProgressRef.current?.(chars.length ? count / chars.length : 1);
+  }, [count, chars.length]);
 
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -71,7 +83,7 @@ export function Typewriter({ onDone }: { onDone?: () => void }) {
       onDoneRef.current?.();
       return;
     }
-    const delay = chars[count]?.ch === "\n" ? 160 : 22;
+    const delay = chars[count]?.ch === "\n" ? 140 : 18;
     const id = window.setTimeout(() => setCount((n) => n + 1), delay);
     return () => window.clearTimeout(id);
   }, [count, chars]);
