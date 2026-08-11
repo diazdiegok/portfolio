@@ -44,8 +44,9 @@ export const experience = [
     org: "Geller Abogados",
     place: "Paraná, Entre Ríos",
     points: [
-      "Administración de infraestructura, puestos de trabajo y software.",
-      "Resolución de incidentes y continuidad operativa del área de sistemas.",
+      "Administración de infraestructura Windows, puestos de trabajo, redes y software.",
+      "Soporte de entornos Linux y servicios internos para continuidad operativa.",
+      "Resolución de incidentes y mantenimiento de la operación del área de sistemas.",
     ],
   },
 ];
@@ -94,6 +95,17 @@ export const skills = [
     ],
   },
   {
+    group: "Sistemas",
+    items: [
+      { name: "Windows", level: "Avanzado" },
+      { name: "Linux", level: "Intermedio" },
+      { name: "Docker", level: "Básico" },
+      { name: "Redes / TCP-IP", level: "Intermedio" },
+      { name: "PowerShell", level: "Intermedio" },
+      { name: "Bash", level: "Básico" },
+    ],
+  },
+  {
     group: "Herramientas",
     items: [
       { name: "Git / GitHub", level: "Intermedio" },
@@ -101,7 +113,7 @@ export const skills = [
       { name: "GitHub Pages", level: "Intermedio" },
       { name: "REST APIs", level: "Intermedio" },
       { name: "Render", level: "Básico" },
-      { name: "Windows / redes", level: "Intermedio" },
+      { name: "SSH / servicios", level: "Intermedio" },
     ],
   },
 ];

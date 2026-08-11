@@ -36,6 +36,11 @@ const lines: Seg[][] = [
     { text: ",", cls: "text-muted" },
   ],
   [
+    { text: "  os: ", cls: "text-prop" },
+    { text: '["Windows", "Linux", "Docker"]', cls: "text-str" },
+    { text: ",", cls: "text-muted" },
+  ],
+  [
     { text: "  email: ", cls: "text-prop" },
     { text: '"diazdiegognicok@gmail.com"', cls: "text-str" },
     { text: ",", cls: "text-muted" },
