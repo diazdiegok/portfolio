@@ -14,6 +14,11 @@ export function Contact() {
             {profile.email}
           </a>
           {"\n"}
+          <span className="text-gold">$</span> wget{" "}
+          <a href={profile.cv} download className="text-str underline-offset-2 hover:underline">
+            cv.pdf
+          </a>
+          {"\n"}
           <span className="text-gold">$</span> open{" "}
           <a href={profile.linkedin} target="_blank" rel="noreferrer" className="text-str underline-offset-2 hover:underline">
             linkedin
@@ -35,6 +40,13 @@ export function Contact() {
             className="rounded-md bg-gold px-5 py-2.5 font-mono text-[13px] text-ink hover:bg-gold-soft"
           >
             mail
+          </a>
+          <a
+            href={profile.cv}
+            download
+            className="rounded-md bg-gold px-5 py-2.5 font-mono text-[13px] text-ink hover:bg-gold-soft"
+          >
+            cv.pdf
           </a>
           <a
             href={profile.linkedin}

@@ -12,11 +12,13 @@ export function Skills() {
               <p className="font-mono text-[12px] text-gold">
                 {`// ${group.group.toLowerCase()}`}
               </p>
-              <ul className="mt-4 space-y-2.5">
+              <ul className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((item) => (
-                  <li key={item.name} className="flex items-baseline justify-between gap-4 font-mono text-[13px]">
-                    <span className="text-paper">{item.name}</span>
-                    <span className="text-cmt">{item.level}</span>
+                  <li
+                    key={item.name}
+                    className="rounded-md border border-line px-2.5 py-1 font-mono text-[12px] text-paper"
+                  >
+                    {item.name}
                   </li>
                 ))}
               </ul>

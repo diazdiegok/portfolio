@@ -53,6 +53,13 @@ export function Hero() {
               linkedin
             </a>
             <a
+              href={profile.cv}
+              download
+              className="rounded-md border border-line px-5 py-2.5 font-mono text-[13px] text-paper hover:border-gold/50"
+            >
+              cv.pdf
+            </a>
+            <a
               href={`mailto:${profile.email}`}
               className="rounded-md border border-line px-5 py-2.5 font-mono text-[13px] text-paper hover:border-gold/50"
             >

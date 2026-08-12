@@ -5,6 +5,7 @@ export const profile = {
   location: "Paraná, Entre Ríos, Argentina",
   email: "diazdiegognicok@gmail.com",
   portfolio: "https://diegodiaz.vercel.app",
+  cv: "/cv.pdf",
   linkedin: "https://www.linkedin.com/in/diego-nicol%C3%A1s-diaz-966153227/",
   github: "https://github.com/diazdiegok",
   headline:
@@ -14,14 +15,16 @@ export const profile = {
 export const about = {
   heading: "Sobre mí",
   paragraphs: [
-    "Soy Diego Nicolás Diaz, desarrollador full stack de Paraná, Entre Ríos. Diseño y construyo software que resuelve problemas reales: sitios, sistemas, bases de datos y herramientas internas que el equipo usa todos los días.",
-    "En Geller Abogados trabajo el área de sistemas de punta a punta. Desarrollo procedimientos en SQL Server para el procesamiento de datos financieros, aplicativos de optimización integrados con IA y automatizaciones en Python. También doy soporte técnico para que la operación no se detenga.",
+    "Soy Diego Nicolás Diaz, desarrollador full stack de Paraná, Entre Ríos. Llevo más de 10 años en informática y soporte; en los últimos años me especialicé en desarrollo web, bases de datos y automatización con Python e IA en entorno corporativo.",
+    "En Geller Abogados trabajo el área de sistemas de punta a punta. Desarrollo procedimientos en SQL Server para el procesamiento de datos financieros, aplicativos de optimización integrados con IA y automatizaciones en Python. También doy soporte de sistemas para que la operación no se detenga.",
     "En paralelo desarrollo productos propios: e-commerce con checkout real, sitios oficiales y tableros de información en vivo. Me interesa que se vea bien, que sea claro y que funcione. Si no aporta, no está terminado.",
-    "Formación en Tecnicatura en Programación (UTN) y Full Stack / bases de datos (CoderHouse). Combino el criterio de un perfil de sistemas con la capacidad de salir a producir interfaces, APIs y soluciones de datos.",
+    "Formación en Tecnicatura en Programación (UTN), Full Stack y bases de datos (CoderHouse), y Data Analytics (CoderHouse). Combino el criterio de un perfil de sistemas con la capacidad de salir a producir interfaces, APIs y soluciones de datos.",
   ],
   education: [
     "Tecnicatura en Programación — UTN",
-    "Full Stack y bases de datos — CoderHouse",
+    "Desarrollador Full Stack — CoderHouse",
+    "Bases de datos SQL / MySQL — CoderHouse",
+    "Data Analytics — CoderHouse",
   ],
 };
 
@@ -32,10 +35,9 @@ export const experience = [
     org: "Geller Abogados",
     place: "Paraná, Entre Ríos",
     points: [
-      "Procedimientos y funciones en SQL Server para el procesamiento de datos de entidades financieras.",
-      "Desarrollo de aplicativos internos de optimización de procesos, integrados con IA.",
-      "Herramientas en Python para automatizar cargas, conciliación y análisis de información operativa.",
-      "Scripts y tableros para reducir tiempos de trabajo sobre archivos Excel y TXT.",
+      "Procedimientos y funciones en SQL Server para el procesamiento diario de datos de entidades financieras.",
+      "Automatizaciones en Python que reemplazan cargas manuales recurrentes sobre archivos Excel y TXT.",
+      "Aplicativos internos de optimización de procesos integrados con IA, usados por el área de sistemas.",
       "Consultas, reportes y modelado de datos para la operación del estudio.",
     ],
   },
@@ -56,68 +58,76 @@ export const skills = [
   {
     group: "Lenguajes",
     items: [
-      { name: "SQL / T-SQL", level: "Avanzado" },
-      { name: "Python", level: "Intermedio" },
-      { name: "JavaScript", level: "Intermedio" },
-      { name: "TypeScript", level: "Intermedio" },
-      { name: "HTML5", level: "Avanzado" },
-      { name: "CSS3", level: "Avanzado" },
+      { name: "SQL / T-SQL" },
+      { name: "Python" },
+      { name: "JavaScript" },
+      { name: "TypeScript" },
+      { name: "HTML5" },
+      { name: "CSS3" },
     ],
   },
   {
     group: "Frontend",
     items: [
-      { name: "React", level: "Intermedio" },
-      { name: "Next.js", level: "Intermedio" },
-      { name: "SASS", level: "Intermedio" },
-      { name: "Bootstrap", level: "Avanzado" },
-      { name: "Tailwind CSS", level: "Intermedio" },
-      { name: "Responsive UI", level: "Avanzado" },
+      { name: "React" },
+      { name: "Next.js" },
+      { name: "SASS" },
+      { name: "Bootstrap" },
+      { name: "Tailwind CSS" },
+      { name: "Responsive UI" },
     ],
   },
   {
     group: "Datos",
     items: [
-      { name: "SQL Server", level: "Avanzado" },
-      { name: "MySQL", level: "Avanzado" },
-      { name: "PostgreSQL", level: "Intermedio" },
-      { name: "Prisma", level: "Intermedio" },
-      { name: "Modelado relacional", level: "Avanzado" },
-      { name: "ETL / Excel / TXT", level: "Avanzado" },
+      { name: "SQL Server" },
+      { name: "MySQL" },
+      { name: "PostgreSQL" },
+      { name: "Prisma" },
+      { name: "Modelado relacional" },
+      { name: "ETL / Excel / TXT" },
+      { name: "Power BI" },
+      { name: "Tableau" },
     ],
   },
   {
     group: "IA y automatización",
     items: [
-      { name: "Python", level: "Intermedio" },
-      { name: "IA aplicada", level: "Intermedio" },
-      { name: "Automatización de procesos", level: "Intermedio" },
-      { name: "Scripts de optimización", level: "Intermedio" },
+      { name: "IA aplicada" },
+      { name: "Automatización de procesos" },
+      { name: "Scripts de optimización" },
     ],
   },
   {
     group: "Sistemas",
     items: [
-      { name: "Windows", level: "Avanzado" },
-      { name: "Linux", level: "Intermedio" },
-      { name: "Docker", level: "Básico" },
-      { name: "Redes / TCP-IP", level: "Intermedio" },
-      { name: "PowerShell", level: "Intermedio" },
-      { name: "Bash", level: "Básico" },
+      { name: "Windows" },
+      { name: "Linux" },
+      { name: "Docker" },
+      { name: "Redes / TCP-IP" },
+      { name: "PowerShell" },
+      { name: "Bash" },
     ],
   },
   {
     group: "Herramientas",
     items: [
-      { name: "Git / GitHub", level: "Intermedio" },
-      { name: "Vercel", level: "Intermedio" },
-      { name: "GitHub Pages", level: "Intermedio" },
-      { name: "REST APIs", level: "Intermedio" },
-      { name: "Render", level: "Básico" },
-      { name: "SSH / servicios", level: "Intermedio" },
+      { name: "Git / GitHub" },
+      { name: "WordPress" },
+      { name: "Vercel" },
+      { name: "GitHub Pages" },
+      { name: "REST APIs" },
+      { name: "Render" },
+      { name: "SSH / servicios" },
     ],
   },
 ];
+
+export type ProjectLink = {
+  title: string;
+  live: string;
+  repo: string;
+};
 
 export type Project = {
   slug: string;
@@ -127,8 +137,10 @@ export type Project = {
   stack: string[];
   description: string;
   live?: string;
-  repo: string;
+  repo?: string;
   preview: string;
+  note?: string;
+  links?: ProjectLink[];
 };
 
 export const projects: Project[] = [
@@ -157,52 +169,48 @@ export const projects: Project[] = [
     preview: "/projects/leonel.png",
   },
   {
-    slug: "padel-fip",
-    title: "FIP Analytics",
-    year: "2026",
-    category: "Dashboard",
-    stack: ["JavaScript", "FIP Rankings"],
+    slug: "geller-mysql",
+    title: "Geller Abogados — MySQL",
+    year: "2024",
+    category: "Base de datos",
+    stack: ["MySQL", "SQL"],
     description:
-      "Consulta del ranking oficial de pádel FIP, con filtros por categoría, país y profundidad del listado.",
-    live: "https://diazdiegok.github.io/Padel_FIP/",
-    repo: "https://github.com/diazdiegok/Padel_FIP",
+      "Modelo relacional de testing con tablas, claves foráneas y consultas SQL. Proyecto interno del estudio, sin demo pública por confidencialidad.",
+    repo: "https://github.com/diazdiegok/gellerabogados-mysql",
+    preview: "/projects/geller-mysql.png",
+    note: "Proyecto interno · solo repo",
+  },
+  {
+    slug: "dashboards-deportivos",
+    title: "Dashboards deportivos",
+    year: "2025 — 2026",
+    category: "Dashboard",
+    stack: ["JavaScript", "APIs", "Datos en vivo"],
+    description:
+      "Colección de tableros con datos en vivo: consumo de APIs, filtros, rankings y visualización clara de temporadas deportivas.",
     preview: "/projects/padel-fip.png",
-  },
-  {
-    slug: "f1-2026",
-    title: "F1 2026",
-    year: "2026",
-    category: "Dashboard",
-    stack: ["JavaScript"],
-    description:
-      "Seguimiento de la temporada de Fórmula 1: campeonato, grandes premios, escuderías y pilotos.",
-    live: "https://diazdiegok.github.io/F1_2026/",
-    repo: "https://github.com/diazdiegok/F1_2026",
-    preview: "/projects/f1-2026.png",
-  },
-  {
-    slug: "motogp-2026",
-    title: "MotoGP 2026",
-    year: "2026",
-    category: "Dashboard",
-    stack: ["JavaScript"],
-    description:
-      "Tablero de la temporada de MotoGP, con filtros por gran premio, equipo y piloto.",
-    live: "https://diazdiegok.github.io/MOTOGP_2026/",
-    repo: "https://github.com/diazdiegok/MOTOGP_2026",
-    preview: "/projects/motogp-2026.png",
-  },
-  {
-    slug: "big-four",
-    title: "Big Four",
-    year: "2025",
-    category: "Dashboard",
-    stack: ["JavaScript"],
-    description:
-      "Comparativa histórica de Federer, Nadal, Djokovic y Murray por Grand Slam, Masters 1000 y superficie.",
-    live: "https://diazdiegok.github.io/Big_Four/",
-    repo: "https://github.com/diazdiegok/Big_Four",
-    preview: "/projects/big-four.png",
+    links: [
+      {
+        title: "FIP Analytics",
+        live: "https://diazdiegok.github.io/Padel_FIP/",
+        repo: "https://github.com/diazdiegok/Padel_FIP",
+      },
+      {
+        title: "F1 2026",
+        live: "https://diazdiegok.github.io/F1_2026/",
+        repo: "https://github.com/diazdiegok/F1_2026",
+      },
+      {
+        title: "MotoGP 2026",
+        live: "https://diazdiegok.github.io/MOTOGP_2026/",
+        repo: "https://github.com/diazdiegok/MOTOGP_2026",
+      },
+      {
+        title: "Big Four",
+        live: "https://diazdiegok.github.io/Big_Four/",
+        repo: "https://github.com/diazdiegok/Big_Four",
+      },
+    ],
   },
   {
     slug: "diazdiegokservice",
@@ -239,17 +247,6 @@ export const projects: Project[] = [
     live: "https://diazdiegok.github.io/desarrollarte/",
     repo: "https://github.com/diazdiegok/desarrollarte",
     preview: "/projects/desarrollarte.png",
-  },
-  {
-    slug: "geller-mysql",
-    title: "Geller Abogados — MySQL",
-    year: "2024",
-    category: "Base de datos",
-    stack: ["MySQL", "SQL"],
-    description:
-      "Base de datos de testing: modelo relacional, tablas, claves foráneas y consultas SQL de prueba.",
-    repo: "https://github.com/diazdiegok/gellerabogados-mysql",
-    preview: "/projects/geller-mysql.png",
   },
 ];
 

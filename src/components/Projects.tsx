@@ -29,6 +29,9 @@ export function Projects() {
                 </p>
                 <h3 className="font-mono mt-2 text-lg text-paper">{p.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{p.description}</p>
+                {p.note ? (
+                  <p className="mt-2 font-mono text-[11px] text-cmt">{p.note}</p>
+                ) : null}
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {p.stack.map((s) => (
                     <span
@@ -39,28 +42,61 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-5 flex gap-2">
-                  {p.live ? (
-                    <a
-                      href={p.live}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex flex-1 items-center justify-center rounded-md bg-gold px-4 py-2 font-mono text-[12px] text-ink hover:bg-gold-soft"
-                    >
-                      live
-                    </a>
-                  ) : null}
-                  <a
-                    href={p.repo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`inline-flex items-center justify-center rounded-md border border-line px-4 py-2 font-mono text-[12px] text-paper hover:border-gold/50 ${
-                      p.live ? "" : "flex-1"
-                    }`}
-                  >
-                    repo
-                  </a>
-                </div>
+                {p.links ? (
+                  <ul className="mt-5 space-y-2 border-t border-line pt-4">
+                    {p.links.map((link) => (
+                      <li
+                        key={link.title}
+                        className="flex flex-wrap items-center justify-between gap-2 font-mono text-[12px]"
+                      >
+                        <span className="text-paper">{link.title}</span>
+                        <span className="flex gap-2">
+                          <a
+                            href={link.live}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-gold hover:text-gold-soft"
+                          >
+                            live
+                          </a>
+                          <a
+                            href={link.repo}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-cmt hover:text-paper"
+                          >
+                            repo
+                          </a>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <div className="mt-5 flex gap-2">
+                    {p.live ? (
+                      <a
+                        href={p.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex flex-1 items-center justify-center rounded-md bg-gold px-4 py-2 font-mono text-[12px] text-ink hover:bg-gold-soft"
+                      >
+                        live
+                      </a>
+                    ) : null}
+                    {p.repo ? (
+                      <a
+                        href={p.repo}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`inline-flex items-center justify-center rounded-md border border-line px-4 py-2 font-mono text-[12px] text-paper hover:border-gold/50 ${
+                          p.live ? "" : "flex-1"
+                        }`}
+                      >
+                        repo
+                      </a>
+                    ) : null}
+                  </div>
+                )}
               </div>
             </article>
           ))}
