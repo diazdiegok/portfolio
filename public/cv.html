@@ -16,49 +16,55 @@
         box-sizing: border-box;
       }
 
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
       body {
         margin: 0;
         font-family: "Segoe UI", Arial, sans-serif;
         color: var(--ink);
-        background: #f3f3f3;
-        line-height: 1.45;
+        background: #fff;
+        font-size: 10.5px;
+        line-height: 1.32;
       }
 
       .page {
         width: 210mm;
-        min-height: 297mm;
-        margin: 16px auto;
-        padding: 16mm 14mm;
-        background: #fff;
-        box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+        height: 297mm;
+        padding: 11mm 12mm 10mm;
+        overflow: hidden;
       }
 
       header {
         display: flex;
         justify-content: space-between;
-        gap: 24px;
+        align-items: flex-start;
+        gap: 16px;
         border-bottom: 2px solid var(--accent);
-        padding-bottom: 12px;
-        margin-bottom: 14px;
+        padding-bottom: 7px;
+        margin-bottom: 7px;
       }
 
       h1 {
         margin: 0;
-        font-size: 26px;
-        letter-spacing: 0.02em;
+        font-size: 22px;
+        line-height: 1.1;
       }
 
       .role {
-        margin-top: 4px;
-        font-size: 14px;
+        margin-top: 2px;
+        font-size: 11.5px;
         color: var(--accent);
         font-weight: 600;
       }
 
       .contact {
         text-align: right;
-        font-size: 11px;
+        font-size: 9.5px;
         color: var(--muted);
+        line-height: 1.35;
       }
 
       .contact a {
@@ -66,89 +72,71 @@
         text-decoration: none;
       }
 
-      .contact p {
-        margin: 2px 0;
+      .links {
+        margin-top: 3px;
+        font-size: 9px;
       }
 
       h2 {
-        margin: 14px 0 6px;
-        font-size: 11px;
-        letter-spacing: 0.14em;
+        margin: 7px 0 3px;
+        font-size: 9.5px;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
         color: var(--accent);
         border-bottom: 1px solid var(--line);
-        padding-bottom: 3px;
+        padding-bottom: 2px;
       }
 
-      p,
-      li {
-        font-size: 12px;
+      p {
+        margin: 0 0 4px;
       }
 
       ul {
         margin: 0;
-        padding-left: 16px;
+        padding-left: 13px;
       }
 
       li {
-        margin-bottom: 3px;
+        margin-bottom: 1px;
       }
 
-      .grid {
+      .cols {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 12px;
       }
 
       .job {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
 
       .job-title {
         font-weight: 700;
-        font-size: 13px;
+        font-size: 10.5px;
       }
 
       .job-meta {
-        font-size: 11px;
+        font-size: 9px;
         color: var(--muted);
-        margin-bottom: 3px;
+        margin-bottom: 1px;
       }
 
       .skills {
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 3px;
       }
 
       .skill {
-        font-size: 10px;
+        font-size: 8.5px;
         border: 1px solid var(--line);
         border-radius: 999px;
-        padding: 3px 8px;
+        padding: 2px 6px;
         background: #fafafa;
       }
 
-      .highlight {
-        background: #f7fbf8;
-        border: 1px solid #d8eadf;
-        border-radius: 8px;
-        padding: 8px 10px;
-        margin-top: 8px;
-        font-size: 11px;
-      }
-
-      .highlight a {
-        color: var(--accent);
-        font-weight: 600;
-        text-decoration: none;
-      }
-
-      .links-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 4px;
+      .projects li {
+        margin-bottom: 2px;
       }
 
       @media print {
@@ -159,8 +147,6 @@
         .page {
           margin: 0;
           box-shadow: none;
-          width: auto;
-          min-height: auto;
         }
       }
     </style>
@@ -173,135 +159,115 @@
           <p class="role">Desarrollador Full Stack · Datos · Sistemas</p>
         </div>
         <div class="contact">
-          <p>Paraná, Entre Ríos</p>
-          <p>(0343) 155 508586</p>
-          <p>diazdiegognicok@gmail.com</p>
+          <div>Paraná, Entre Ríos · (0343) 155 508586</div>
+          <div><a href="mailto:diazdiegognicok@gmail.com">diazdiegognicok@gmail.com</a></div>
+          <div class="links">
+            <a href="https://diegodiaz.vercel.app">diegodiaz.vercel.app</a> ·
+            <a href="https://github.com/diazdiegok">github.com/diazdiegok</a> ·
+            <a href="https://www.linkedin.com/in/diego-nicol%C3%A1s-diaz-966153227/">LinkedIn</a>
+          </div>
         </div>
       </header>
-
-      <div class="highlight">
-        <strong>Portfolio:</strong> diegodiaz.vercel.app ·
-        <strong>GitHub:</strong> github.com/diazdiegok ·
-        <strong>LinkedIn:</strong> linkedin.com/in/diego-nicolás-diaz-966153227
-        <div class="links-row">
-          <a href="https://diegodiaz.vercel.app">diegodiaz.vercel.app</a>
-          <a href="https://github.com/diazdiegok">github.com/diazdiegok</a>
-          <a href="https://www.linkedin.com/in/diego-nicol%C3%A1s-diaz-966153227/">LinkedIn</a>
-        </div>
-      </div>
 
       <section>
         <h2>Perfil</h2>
         <p>
-          Desarrollador full stack de Paraná con más de 10 años en informática y soporte técnico.
-          En los últimos años me especialicé en desarrollo web, bases de datos y automatización con
-          Python e IA en Geller Abogados. Desarrollo sitios, e-commerce, dashboards y herramientas
-          internas orientadas a resolver problemas reales de negocio.
+          Desarrollador full stack con más de 10 años en informática y soporte. Especializado en
+          desarrollo web, bases de datos y automatización con Python e IA en Geller Abogados.
+          Construyo sitios, e-commerce, dashboards y herramientas internas con foco en impacto
+          operativo.
         </p>
       </section>
 
-      <section>
-        <h2>Experiencia laboral</h2>
+      <div class="cols">
+        <div>
+          <section>
+            <h2>Experiencia laboral</h2>
 
-        <div class="job">
-          <div class="job-title">Desarrollador SQL Server, Python e IA</div>
-          <div class="job-meta">Geller Abogados SA · Paraná · 2024 — Actualidad</div>
-          <ul>
-            <li>Procedimientos y funciones en SQL Server para el procesamiento diario de datos de entidades financieras.</li>
-            <li>Automatizaciones en Python que reemplazan cargas manuales recurrentes sobre archivos Excel y TXT.</li>
-            <li>Aplicativos internos de optimización integrados con IA, usados por el área de sistemas.</li>
-            <li>Consultas, reportes y modelado de datos para la operación del estudio.</li>
-          </ul>
+            <div class="job">
+              <div class="job-title">Desarrollador SQL Server, Python e IA</div>
+              <div class="job-meta">Geller Abogados SA · 2024 — Actualidad</div>
+              <ul>
+                <li>Procedimientos SQL Server para procesamiento diario de datos financieros.</li>
+                <li>Automatizaciones en Python sobre cargas manuales en Excel y TXT.</li>
+                <li>Aplicativos internos con IA usados por el área de sistemas.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-title">Soporte de sistemas</div>
+              <div class="job-meta">Geller Abogados SA · 2021 — Actualidad</div>
+              <ul>
+                <li>Infraestructura Windows, Linux, redes y continuidad operativa del estudio.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-title">Service técnico · Hardware y software</div>
+              <div class="job-meta">Paraná e interior · 2014 — 2021</div>
+              <ul>
+                <li>Reparación de equipos y redes para locales comerciales.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Proyectos destacados</h2>
+            <ul class="projects">
+              <li><strong>Eternity Recuerdos</strong> — E-commerce con admin y checkout.</li>
+              <li><strong>Leonel Daniel Aguirre</strong> — Sitio oficial Premier Padel / FIP.</li>
+              <li><strong>Dashboards deportivos</strong> — FIP, F1, MotoGP y Big Four.</li>
+              <li><strong>Geller MySQL</strong> — Modelo relacional (proyecto interno).</li>
+            </ul>
+          </section>
         </div>
 
-        <div class="job">
-          <div class="job-title">Soporte de sistemas</div>
-          <div class="job-meta">Geller Abogados SA · Paraná · Mayo 2021 — Actualidad</div>
-          <ul>
-            <li>Administración de infraestructura Windows, redes, puestos de trabajo y software.</li>
-            <li>Soporte de entornos Linux y servicios internos para continuidad operativa.</li>
-            <li>Resolución de incidentes y mantenimiento del área de sistemas.</li>
-          </ul>
+        <div>
+          <section>
+            <h2>Formación</h2>
+            <ul>
+              <li><strong>Tecnicatura en Programación</strong> — UTN (2018)</li>
+              <li><strong>Full Stack</strong> — CoderHouse (2021 — Actualidad)</li>
+              <li><strong>SQL / MySQL</strong> — CoderHouse (2023)</li>
+              <li><strong>Data Analytics</strong> — CoderHouse (2024)</li>
+              <li><strong>Bachiller</strong> — Colegio Nacional Paraná Nº1</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Skills</h2>
+            <div class="skills">
+              <span class="skill">SQL Server</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">Python</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">TypeScript</span>
+              <span class="skill">React</span>
+              <span class="skill">Next.js</span>
+              <span class="skill">HTML/CSS</span>
+              <span class="skill">Tailwind</span>
+              <span class="skill">Bootstrap</span>
+              <span class="skill">IA aplicada</span>
+              <span class="skill">Power BI</span>
+              <span class="skill">Tableau</span>
+              <span class="skill">Windows</span>
+              <span class="skill">Linux</span>
+              <span class="skill">Docker</span>
+              <span class="skill">Git</span>
+              <span class="skill">WordPress</span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Datos adicionales</h2>
+            <ul>
+              <li>Inglés — buen manejo</li>
+              <li>Carnet B-1 · vehículo propio</li>
+              <li>Disponibilidad horaria completa</li>
+            </ul>
+          </section>
         </div>
-
-        <div class="job">
-          <div class="job-title">Service técnico · Hardware y software</div>
-          <div class="job-meta">Paraná e interior · 2014 — 2021</div>
-          <ul>
-            <li>Reparación de celulares, notebooks, PCs y redes para locales comerciales.</li>
-            <li>Atención al cliente en Enter Digital (2014) e Ideas Telefonía (2015-2016).</li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="grid">
-        <section>
-          <h2>Formación académica</h2>
-          <ul>
-            <li><strong>Tecnicatura en Programación</strong> — UTN Paraná (2018)</li>
-            <li><strong>Desarrollador Full Stack</strong> — CoderHouse (2021 — Actualidad)</li>
-            <li><strong>Bases de datos SQL / MySQL</strong> — CoderHouse (2023)</li>
-            <li><strong>Data Analytics</strong> — CoderHouse (2024)</li>
-            <li><strong>Bachiller Humanidades</strong> — Colegio Nacional Paraná Nº1</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Idiomas e intereses</h2>
-          <ul>
-            <li>Inglés — buen manejo</li>
-            <li>Carnet de conducir B-1 · vehículo propio</li>
-            <li>Disponibilidad horaria completa</li>
-          </ul>
-        </section>
       </div>
-
-      <section>
-        <h2>Skills</h2>
-        <div class="skills">
-          <span class="skill">SQL Server</span>
-          <span class="skill">MySQL</span>
-          <span class="skill">Python</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">TypeScript</span>
-          <span class="skill">React</span>
-          <span class="skill">Next.js</span>
-          <span class="skill">HTML5</span>
-          <span class="skill">CSS3</span>
-          <span class="skill">Bootstrap</span>
-          <span class="skill">Tailwind CSS</span>
-          <span class="skill">IA aplicada</span>
-          <span class="skill">Power BI</span>
-          <span class="skill">Tableau</span>
-          <span class="skill">Windows</span>
-          <span class="skill">Linux</span>
-          <span class="skill">Docker</span>
-          <span class="skill">Git / GitHub</span>
-          <span class="skill">WordPress</span>
-        </div>
-      </section>
-
-      <section>
-        <h2>Proyectos destacados</h2>
-        <ul>
-          <li>
-            <strong>Eternity Recuerdos</strong> — E-commerce con panel admin, carrito y checkout.
-            eternity-i5n2.onrender.com
-          </li>
-          <li>
-            <strong>Leonel Daniel Aguirre</strong> — Sitio oficial Premier Padel / FIP.
-          </li>
-          <li>
-            <strong>Dashboards deportivos</strong> — FIP Analytics, F1 2026, MotoGP 2026, Big Four.
-          </li>
-          <li>
-            <strong>Geller Abogados — MySQL</strong> — Modelo relacional (proyecto interno, solo repo).
-          </li>
-        </ul>
-        <p style="font-size: 11px; color: var(--muted); margin-top: 6px;">
-          Portfolio completo con previews: diegodiaz.vercel.app
-        </p>
-      </section>
     </main>
   </body>
 </html>
