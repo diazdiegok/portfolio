@@ -4,6 +4,7 @@ export const profile = {
   role: "Desarrollador Full Stack",
   location: "Paraná, Entre Ríos, Argentina",
   email: "diazdiegognicok@gmail.com",
+  portfolio: "https://diegodiaz.vercel.app",
   linkedin: "https://www.linkedin.com/in/diego-nicol%C3%A1s-diaz-966153227/",
   github: "https://github.com/diazdiegok",
   headline:
