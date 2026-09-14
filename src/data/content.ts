@@ -145,16 +145,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "eternity",
-    title: "Eternity Recuerdos",
-    year: "2025",
+    slug: "aurea",
+    title: "Aurea Joyas ADN",
+    year: "2026",
     category: "E-commerce",
-    stack: ["Next.js", "PostgreSQL", "Prisma", "Mercado Pago"],
+    stack: ["Next.js", "PostgreSQL", "Prisma"],
     description:
-      "Catálogo online con panel de administración, carrito y checkout por WhatsApp, con integración opcional a Mercado Pago.",
-    live: "https://eternity-i5n2.onrender.com/",
-    repo: "https://github.com/diazdiegok/Eternity",
-    preview: "/projects/eternity.png",
+      "Catálogo online de joyas con panel de administración, carrito, transferencia y checkout por WhatsApp.",
+    live: "https://aurea-isyq.onrender.com/",
+    repo: "https://github.com/diazdiegok/Aurea",
+    preview: "/projects/aurea.png",
   },
   {
     slug: "leonel",
