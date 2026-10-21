@@ -140,10 +140,24 @@ export type Project = {
   repo?: string;
   preview: string;
   note?: string;
+  featured?: boolean;
   links?: ProjectLink[];
 };
 
 export const projects: Project[] = [
+  {
+    slug: "padel-fb",
+    title: "Padel FB",
+    year: "2026",
+    category: "Plataforma",
+    stack: ["Astro", "JavaScript", "Cloudflare Workers"],
+    description:
+      "Liga y academia de pádel en Paraná. Ranking, fixture, resultados, playoff, inscripciones y un panel para abrir, cerrar y publicar cada fecha.",
+    live: "https://padel-fb.vercel.app/",
+    repo: "https://github.com/diazdiegok/Padel-FB",
+    preview: "/projects/padel-fb.png",
+    featured: true,
+  },
   {
     slug: "aurea",
     title: "Aurea Joyas ADN",
