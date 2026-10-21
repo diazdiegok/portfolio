@@ -256,7 +256,7 @@ export const projects: Project[] = [
     stack: ["HTML", "CSS"],
     description:
       "Sitio de servicios de desarrollo web: diseño a medida, hosting y sitios adaptables.",
-    live: "https://diazdiegok.github.io/desarrollarte/",
+    live: "https://desarrollarte.vercel.app/",
     repo: "https://github.com/diazdiegok/desarrollarte",
     preview: "/projects/desarrollarte.png",
   },
