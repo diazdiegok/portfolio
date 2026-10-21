@@ -10,9 +10,7 @@ export function Projects() {
           {projects.map((p) => (
             <article
               key={p.slug}
-              className={`flex flex-col overflow-hidden rounded-xl border border-line bg-[#010409] transition hover:border-gold/40 ${
-                p.featured ? "sm:col-span-2" : ""
-              }`}
+              className="flex flex-col overflow-hidden rounded-xl border border-line bg-[#010409] transition hover:border-gold/40"
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-[#010409]">
                 <img

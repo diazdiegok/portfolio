@@ -140,7 +140,6 @@ export type Project = {
   repo?: string;
   preview: string;
   note?: string;
-  featured?: boolean;
   links?: ProjectLink[];
 };
 
@@ -156,7 +155,6 @@ export const projects: Project[] = [
     live: "https://padel-fb.vercel.app/",
     repo: "https://github.com/diazdiegok/Padel-FB",
     preview: "/projects/padel-fb.png",
-    featured: true,
   },
   {
     slug: "aurea",
